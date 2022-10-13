@@ -1,0 +1,24 @@
+Exerice Verger :
+
+Cerisier : 
+
+kg de cerise par arbre minimum : 45'000 * 5 / 1000 = 225kg
+kg de cersie max arbre : 60'000 * 5 / 1000 = 300kg
+moyenne 262.5kg
+
+Pommier :
+
+kg min par arbre : 600 * 150 / 1000 = 90kg
+kg max par arbre : 850 * 150 / 1000 = 127.5kg
+
+Poirier :
+
+kg min par arbre : 250 * 90 / 1000 = 22.5kg
+kg max par arbre : 350 * 90 / 1000 = 31.5kg 
+
+Kg Totaux min : 337,5kg
+kg Totaux max : 459kg
+moyenn = 398.25
+
+
+On récolte que 1x dans l'année donc les ceriser qui finissent en mai sont hard.
