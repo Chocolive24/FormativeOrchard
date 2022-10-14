@@ -44,7 +44,7 @@ std::string Game::GetCurrentMonthAsString()
 
 bool Game::CheckHarvestMonth(Month currentMonth)
 {
-	if (_harvestNbr > 0 && currentMonth >= Month::MAY)
+	if (_harvestNbr > 0)
 	{
 		_harvestNbr -= 0;
 		return true;

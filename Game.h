@@ -18,6 +18,8 @@ public:
 	std::string GetCurrentMonthAsString();
 	int GetWeightToWin() { return _weightToWin; }
 
+	int AddCherriesToTotalCherriesNbr();
+
 	bool CheckHarvestMonth(Month currentMonth);
 
 	Month GoToNextMonth(Month currentMonth, char key, std::vector<Tree>& trees);

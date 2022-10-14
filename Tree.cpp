@@ -23,7 +23,8 @@ int Tree::SetFruitNbr(int minFruit, int maxFruit)
 
 void Tree::Grow(Month currentMonth)
 {
-
+	// TODO potentiellemênt ajouter des mois de debut floraison et fin floraison
+	// TODO car les pommes peuvent perdre leur récolte de avril a aout potentiellement
 	if (currentMonth == Month::APRIL)
 	{
 		// 5% chance of loss. 
@@ -41,28 +42,26 @@ void Tree::Grow(Month currentMonth)
 
 	}
 
-	std::cout << "Nbr of " << GetFruitName() << " : " << GetFruitNbr() << std::endl;
-
 	if(currentMonth > _startHarvestMonth && currentMonth <= _endHarvestMonth)
 	{
-		if (_maxCurrentFruits > 0)
+		if (_fruitNbr > 0)
 		{
-			_fruitNbr -= Utility::GetRandomInt(_maxCurrentFruits * 0.03, _maxCurrentFruits * 0.10);
+			_fruitNbr += - (Utility::GetRandomInt(_maxCurrentFruits * 0.03, _maxCurrentFruits * 0.10));
 		}
 		
 	}
 
 	if (currentMonth > _endHarvestMonth)
 	{
-		if ((int)currentMonth == (int)_endHarvestMonth + 1)
+		if ((int)currentMonth == (int)_endHarvestMonth)
 		{
 			_maxCurrentFruits = _fruitNbr;
 		}
 
-		if (_maxCurrentFruits > 0)
+		if (_fruitNbr > 0)
 		{
-			const int fruitLoss = _maxCurrentFruits / ((int)Month::DECEMBER - ((int)_endHarvestMonth + 1));
-			_fruitNbr -= fruitLoss;
+			const int fruitLoss = _maxCurrentFruits / ((int)Month::DECEMBER - ((int)_endHarvestMonth));
+			_fruitNbr += -(fruitLoss);
 		}
 
 	}
@@ -71,6 +70,8 @@ void Tree::Grow(Month currentMonth)
 	{
 		_fruitNbr = 0;
 	}
+
+	//std::cout << "Nbr of " << GetFruitName() << " : " << GetFruitNbr() << std::endl;
 }
 
 double Tree::Harvest()
