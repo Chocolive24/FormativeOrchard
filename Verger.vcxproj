@@ -131,11 +131,10 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="CherryTree.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="PearTree.cpp" />
-    <ClCompile Include="Tree.cpp" />
-    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="models\audioManager\AudioManager.cpp" />
+    <ClCompile Include="models\game\Game.cpp" />
+    <ClCompile Include="models\tree\Tree.cpp" />
+    <ClCompile Include="models\utility\Utility.cpp" />
     <ClCompile Include="Verger.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -143,12 +142,14 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
     </ClInclude>
-    <ClInclude Include="CherryTree.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="Month.h" />
-    <ClInclude Include="PearTree.h" />
-    <ClInclude Include="Tree.h" />
-    <ClInclude Include="Utility.h" />
+    <ClInclude Include="models\audioManager\AudioManager.h" />
+    <ClInclude Include="models\game\Game.h" />
+    <ClInclude Include="models\month\Month.h" />
+    <ClInclude Include="models\tree\Tree.h" />
+    <ClInclude Include="models\utility\Utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="assets\music\main_theme.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
