@@ -39,9 +39,10 @@ public:
 	int GetHarvestNbr() { return _harvestNbr; }
 	int GetWeightToWin() { return _weightToWin; }
 
-	void DisplayInformations();
+	
 
 	void UpdateTreesInformations();
+	void DisplayInformations();
 
 	void PlayGame();
 

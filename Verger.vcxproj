@@ -127,10 +127,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AppleTree.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="models\audioManager\AudioManager.cpp" />
     <ClCompile Include="models\game\Game.cpp" />
     <ClCompile Include="models\tree\Tree.cpp" />
@@ -138,10 +134,6 @@
     <ClCompile Include="Verger.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AppleTree.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="models\audioManager\AudioManager.h" />
     <ClInclude Include="models\game\Game.h" />
     <ClInclude Include="models\month\Month.h" />

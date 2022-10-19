@@ -21,9 +21,6 @@
     <ClCompile Include="models\tree\Tree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AppleTree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="models\game\Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -36,9 +33,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="models\tree\Tree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AppleTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="models\game\Game.h">
