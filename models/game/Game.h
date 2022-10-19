@@ -7,8 +7,23 @@ class Game
 {
 private:
 
+	bool _game = true;
+
 	Month _currentMonth = Month::JANUARY;
-	int _harvestNbr = 12;
+	int _harvestNbr = 1;
+
+	int _tmpTotalFruits = 0;
+	int _tmpTotalOfCherries = 0;
+	int _tmpTotalOfApples = 0;
+	int _tmpTotalOfPears = 0;
+	double _tmpTotalWeight = 0.0;
+
+	std::string _cherryTreeHarvestState;
+	std::string _appleTreeHarvestState;
+	std::string _pearTreeHarvestState;
+
+	double _totalFruitsWeight = 0.0;
+
 	int _weightToWin = 2000;
 
 	std::vector<Tree> _trees;
@@ -24,9 +39,13 @@ public:
 	int GetHarvestNbr() { return _harvestNbr; }
 	int GetWeightToWin() { return _weightToWin; }
 
+	void DisplayInformations();
+
+	void UpdateTreesInformations();
+
 	void PlayGame();
 
-	bool CheckIfHarvestIsPossible();
+	bool CheckIfHarvestIsPossible() { return _harvestNbr > 0; }
 
 	void ShowAndDoTheActions(Month currentMonth, std::vector<Tree>& trees);
 
@@ -34,5 +53,7 @@ public:
 
 	double Harvest(Month currentMonth, std::vector<Tree>& trees);
 
-};
+	void DisplayYearReport();
+	void Restart();
 
+};

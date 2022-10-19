@@ -26,7 +26,7 @@ namespace Utility
 		{
 			key = _getch();
 
-			if (key == 13 || key == '1')
+			if (key == 13 || key == '1' || key == '2')
 			{
 				break;
 			}

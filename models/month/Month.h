@@ -15,4 +15,5 @@ enum class Month
 	OCTOBER,
 	NOVEMBER,
 	DECEMBER,
+	ENDYEAR,
 };

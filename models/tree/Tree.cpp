@@ -68,10 +68,10 @@ void Tree::Grow(Month currentMonth)
 			_maxCurrentFruits = SetFruitNbr(_minNbrOfFruits, _maxNbrOfFruits);
 		}
 
-		else
+		/*else
 		{
 			std::cout << "Sadly a fruit tree didn't survived..." << std::endl;
-		}
+		}*/
 
 	}
 
