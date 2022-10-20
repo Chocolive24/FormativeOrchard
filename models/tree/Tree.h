@@ -19,6 +19,7 @@ private:
 
 	bool _readyToBeHarvested = false;
 	std::string _harvestState;
+	bool _isDead = false;
 
 public:
 
@@ -34,6 +35,7 @@ public:
 	int GetFruitNbr() { return _fruitNbr; }
 	double GetFruitWeight() { return _fruitWeight; }
 	std::string GetHarvestState() { return _harvestState; }
+	bool SetTreeToDead(bool dead) { return _isDead = dead; }
 
 	void CheckHarvestState(Month currentMonth);
 	std::string SetHarvestState();

@@ -32,17 +32,34 @@ void Tree::CheckHarvestState(Month currentMonth)
 
 std::string Tree::SetHarvestState()
 {
-	if (_readyToBeHarvested == true)
+	if (!_isDead)
+	{
+		if (_readyToBeHarvested == true && GetFruitNbr() != 0)
+		{
+			_harvestState = "READY";
+		}
+
+		else if (_readyToBeHarvested == true && GetFruitNbr() == 0)
+		{
+			_harvestState = "HARVESTED";
+		}
+
+		else
+		{
+			_harvestState = "NOT READY";
+		}
+
+		return _harvestState;
+	}
+
+	
+	if (_readyToBeHarvested)
 	{
 		_harvestState = "READY";
 	}
-
-	else
-	{
-		_harvestState = "NOT READY";
-	}
-
+	
 	return _harvestState;
+	
 }
 
 // ------------------------------------------------------------------------------------------------------------------
@@ -56,8 +73,6 @@ int Tree::SetFruitNbr(int minFruit, int maxFruit)
 
 void Tree::Grow(Month currentMonth)
 {
-	// TODO potentiellemênt ajouter des mois de debut floraison et fin floraison
-	// TODO car les pommes peuvent perdre leur récolte de avril a aout potentiellement
 	if (currentMonth == Month::APRIL)
 	{
 		// 5% chance of loss. 
@@ -68,11 +83,10 @@ void Tree::Grow(Month currentMonth)
 			_maxCurrentFruits = SetFruitNbr(_minNbrOfFruits, _maxNbrOfFruits);
 		}
 
-		/*else
+		else
 		{
-			std::cout << "Sadly a fruit tree didn't survived..." << std::endl;
-		}*/
-
+			SetTreeToDead(true);
+		}
 	}
 
 	if(currentMonth > _startHarvestMonth && currentMonth <= _endHarvestMonth)
@@ -81,22 +95,21 @@ void Tree::Grow(Month currentMonth)
 		{
 			_fruitNbr += - (Utility::GetRandomInt(_maxCurrentFruits * 0.03, _maxCurrentFruits * 0.10));
 		}
-		
+	}
+
+	if (currentMonth == _endHarvestMonth)
+	{
+		_maxCurrentFruits = _fruitNbr;
 	}
 
 	if (currentMonth > _endHarvestMonth)
 	{
-		if ((int)currentMonth == (int)_endHarvestMonth)
-		{
-			_maxCurrentFruits = _fruitNbr;
-		}
 
-		if (_fruitNbr > 0)
-		{
-			const int fruitLoss = _maxCurrentFruits / ((int)Month::DECEMBER - ((int)_endHarvestMonth));
-			_fruitNbr += -(fruitLoss);
-		}
-
+	if (_fruitNbr > 0)
+	{
+		const int fruitLoss = _maxCurrentFruits / ((int)Month::DECEMBER - ((int)_endHarvestMonth));
+		_fruitNbr += -(fruitLoss);
+	}
 	}
 
 	if (currentMonth == Month::DECEMBER)

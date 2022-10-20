@@ -119,11 +119,11 @@ void Game::UpdateTreesInformations()
 		{
 			_tmpTotalOfCherries += tree.GetFruitNbr();
 
-			if (tree.GetFruitNbr() == 0)
-			{
-				_tmpTotalOfCherries = 0;
-				_cherryTreeHarvestState = "HARVESTED";
-			}
+			//if (tree.GetFruitNbr() == 0)
+			//{
+			//	_tmpTotalOfCherries = 0;
+			//	//_cherryTreeHarvestState = "HARVESTED";
+			//}
 
 			_cherryTreeHarvestState = tree.SetHarvestState();
 		}
@@ -132,11 +132,10 @@ void Game::UpdateTreesInformations()
 		{
 			_tmpTotalOfApples += tree.GetFruitNbr();
 
-			if (tree.GetFruitNbr() == 0)
+			/*if (tree.GetFruitNbr() == 0)
 			{
 				_tmpTotalOfApples = 0;
-				_appleTreeHarvestState = "HARVESTED";
-			}
+			}*/
 
 			_appleTreeHarvestState = tree.SetHarvestState();
 		}
@@ -145,11 +144,10 @@ void Game::UpdateTreesInformations()
 		{
 			_tmpTotalOfPears += tree.GetFruitNbr();
 
-			if (tree.GetFruitNbr() == 0)
+			/*if (tree.GetFruitNbr() == 0)
 			{
 				_tmpTotalOfPears = 0;
-				_pearTreeHarvestState = "HARVESTED";
-			}
+			}*/
 
 			_pearTreeHarvestState = tree.SetHarvestState();
 		}
@@ -228,7 +226,7 @@ double Game::Harvest(Month currentMonth, std::vector<Tree>& trees)
 			_totalFruitsWeight += tree.Harvest(currentMonth);
 		}
 
-		_harvestNbr -= 1;
+		_harvestNbr = 0;
 	}
 
 	return _totalFruitsWeight;
@@ -243,7 +241,7 @@ void Game::DisplayYearReport()
 
 		if (_totalFruitsWeight >= _weightToWin)
 		{
-			std::cout << "You Win !!! Objective not achieved !!!" << std::endl;
+			std::cout << "You Win !!! Objective achieved !!!" << std::endl;
 			std::cout << _totalFruitsWeight << "kg"
 				<< " / " << GetWeightToWin() << "kg" << std::endl << std::endl;
 		}
@@ -272,7 +270,7 @@ void Game::Restart()
 	{
 		_trees.clear();
 		SetUpTrees();
-		_harvestNbr += 1;
+		_harvestNbr = 1;
 		_currentMonth = Month::JANUARY;
 		_totalFruitsWeight = 0;
 	}
