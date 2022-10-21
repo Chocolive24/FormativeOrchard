@@ -7,7 +7,7 @@ The aim of the exercise was to create an orchard.
 Each month, something happen to the trees.  
 You have to harvest the fruits from the trees at the right month to have the maximum fruit weight possible.
 
-Basics element requiered in the program :  
+# Basics element requiered in the program :  
 * Créer un programme permettant de gérer votre verger :
   * Il y a dans ce verger 3 types d’arbre : Pommier, Poirier, Cerisier.
   * | tree name | Nb fruits | fruits weight (g)| winter | flowering | harvest | descent (autumn) |
@@ -38,7 +38,8 @@ Basics element requiered in the program :
        * Implement the hazards
 
 
-Learning objectives :  
-* Explain characteristics of algorithms.
-* Produce stable code using object-oriented programming.
-* Create algorithms for specific tasks. 
+# Learning objectives :  
+* Point out computer game related mathematics
+* Create a stable code base using object-oriented programming
+* Design algorithms for specific tasks
+* Apply relevant mathematics concepts to computer game code
