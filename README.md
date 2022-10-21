@@ -17,11 +17,11 @@ Basics element requiered in the program :
     | pear tree | 250 - 350 | 90 | January - March | April - September | October - November | July - December |
 
   * Each tree goes through different phases:
-        * Flowering: no fruit is available, there is a 5% chance of losing the crop;  
-        * Growth: the fruit gradually grows and ripens, each month between 3% and 10% of the fruit disappears, due to birds and other pests.  
-        * The "descent": the fruits rot gradually if they are not harvested. At the end of this period, the whole crop is gone.  
-        * Winter (January - March): The tree is dormant, nothing grows, but nothing problematic happens.  
-        * When harvesting for his cooperative, the farmer has committed to providing 2000 kg of fruit at each harvest, unfortunately he can only afford one harvest period    for which they have the means to hire seasonal workers.  
+   * Flowering: no fruit is available, there is a 5% chance of losing the crop;  
+   * Growth: the fruit gradually grows and ripens, each month between 3% and 10% of the fruit disappears, due to birds and other pests.  
+   * The "descent": the fruits rot gradually if they are not harvested. At the end of this period, the whole crop is gone.  
+   * Winter (January - March): The tree is dormant, nothing grows, but nothing problematic happens.  
+   * When harvesting for his cooperative, the farmer has committed to providing 2000 kg of fruit at each harvest, unfortunately he can only afford one harvest period for        which they have the means to hire seasonal workers.  
 
  
 
