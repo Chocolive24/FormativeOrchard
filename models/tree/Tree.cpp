@@ -62,7 +62,7 @@ void Tree::Grow(Month currentMonth)
 	}
 
 	// If it's the end of the harvest phase,
-	// update the max current fruits of the tree to it's real fruit number.
+	// update the max current fruits of the tree to its real fruit number.
 	if (currentMonth == _endHarvestMonth)
 	{
 		_maxCurrentFruits = _fruitNbr;
