@@ -8,8 +8,8 @@ Each month, something happen to the trees.
 You have to harvest the fruits from the trees at the right month to have the maximum fruit weight possible.
 
 # Basics element requiered in the program :  
-* Créer un programme permettant de gérer votre verger :
-  * Il y a dans ce verger 3 types d’arbre : Pommier, Poirier, Cerisier.
+* Create a program to manage your orchard:
+  * There are 3 types of trees in this orchard: Apple Tree , Pear Tree and Cherry Tree.
   * | tree name | Nb fruits | fruits weight (g)| winter | flowering | harvest | descent (autumn) |
     | --- | --- | --- | --- | --- | --- | --- |
     | cherry tree | 45.000 - 60.000 | 5 | January - March | April | May - June | July - December |
