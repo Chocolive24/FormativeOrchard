@@ -16,29 +16,28 @@ Basics element requiered in the program :
     | apple tree | 600 - 850 | 150 | January - March | April - August | September - November | July - December |
     | pear tree | 250 - 350 | 90 | January - March | April - September | October - November | July - December |
 
-
-    Chaque arbre passe par différentes phases :
-        La floraison : aucun fruit n’est disponible, il y a 5% de chances de perdre la récolte;
-        La pousse : les fruits poussent progressivement et mûrissent, chaque mois entre 3% et 10% des fruits disparaissent, dus aux oiseaux et autres parasites.
-        La “descente” :  les fruits pourrissent petit à petit si ils ne sont pas récoltés. A la fin de cette période, toute la récolte est foutue.
-        L’hiver (Janvier Mars) : L’arbre est en sommeil, rien ne pousse, mais rien n’arrive de problématique.
-    Lors de la récolte pour sa coopérative, le paysan s’est engagé à fournir à chaque récolte 2000 kg de fruits, malheureusement il ne peut se permettre qu’une seule période de récolte pour laquelle ils disposent des moyens pour embaucher des saisonniers.
+  * Each tree goes through different phases:
+        * Flowering: no fruit is available, there is a 5% chance of losing the crop;
+        * Growth: the fruit gradually grows and ripens, each month between 3% and 10% of the fruit disappears, due to birds and other pests.
+        * The "descent": the fruits rot gradually if they are not harvested. At the end of this period, the whole crop is gone.
+        * Winter (January - March): The tree is dormant, nothing grows, but nothing problematic happens.
+        * When harvesting for his cooperative, the farmer has committed to providing 2000 kg of fruit at each harvest, unfortunately he can only afford one harvest period    for which they have the means to hire seasonal workers.
 
  
 
-    Les données fournies sont-elles équilibrées ? 
-        Faites les calculs nécessaires pour déterminer le nombre d’arbres à implanter pour que le verger fonctionne correctement.
-        Déterminez si une période optimale est possible
-    Créer un programme permettant les récoltes à l’aide :
-        une hiérarchie de classes permettant la distinction des différents arbres
-        les classes pourront implémenter une méthode permettant
-             “la pousse des fruits” ( = initier la quantité; on ignorera les problématiques de saison en estimant les fruits immédiatement disponibles)
-            la récolte en vérifiant la quantité disponible sur chaque arbre
-        le programme principal permettra au paysan le contenu de chaque récolte. 
-    Progressez par étapes :
-        Un type d’arbre sur une année
-        Implémenter les 3 types d’arbres
-        Implémenter les aléas
+    Do the data provided balance out? 
+        Make the necessary calculations to determine the number of trees that need to be planted for the orchard to function properly.
+        Determine if an optimal period is possible
+    Create a program to allow harvesting using :
+        a hierarchy of classes to distinguish the different trees
+        the classes can implement a method for
+             the "growing of the fruits" (= initiating the quantity; we will ignore the problems of season by estimating the fruits immediately available)
+            harvesting by checking the quantity available on each tree
+        the main program will allow the farmer the content of each harvest. 
+    Progress in stages:
+        One tree type in one year
+        Implement the 3 tree types
+        Implement the hazards
 
 
 Learning objectives :  
