@@ -2,8 +2,7 @@
 
 enum class Month
 {
-	NEWYEAR,
-	JANUARY,
+	JANUARY = 1,
 	FEBRUARY,
 	MARCH,
 	APRIL,
@@ -15,5 +14,5 @@ enum class Month
 	OCTOBER,
 	NOVEMBER,
 	DECEMBER,
-	ENDYEAR,
+	ENDYEAR
 };
