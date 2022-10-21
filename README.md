@@ -10,89 +10,12 @@ You have to harvest the fruits from the trees at the right month to have the max
 Basics element requiered in the program :  
 * Créer un programme permettant de gérer votre verger :
   * Il y a dans ce verger 3 types d’arbre : Pommier, Poirier, Cerisier.
+  * | tree name | Nb fruits | fruits weight (g)| winter | flowering | harvest | descent (autumn) |
+    | --- | --- | --- | --- | --- | --- | --- |
+    | cherry tree | 45.000 - 60.000 | 5 | January - March | April | May - June | July - December |
+    | apple tree | 600 - 850 | 150 | January - March | April - August | September - November | July - December |
+    | pear tree | 250 - 350 | 90 | January - March | April - September | October - November | July - December |
 
-	
-
-Nb fruits
-	
-
-Poids des fruits (en g)
-	
-
-Hiver
-	
-
-Floraison (Printemps)
-	
-
-Pousse/Récolte (Ete)
-	
-
-Descente
-
-(Automne)
-
-Cerisier
-	
-
-45.000 - 60.000
-	
-
-5
-	
-
-Janvier -> Mars
-	
-
-Avril
-	
-
-Mai, Juin
-	
-
-Juillet, Decembre
-
-Pommier
-	
-
-600 - 850
-	
-
-150
-	
-
-Janvier -> Mars
-	
-
-Avril -> Aout
-	
-
-Septembre -> Novembre
-	
-
-Decembre
-
-Poirier
-	
-
-250 - 350
-	
-
-90
-	
-
-Janvier -> Mars
-	
-
-Avril -> Septembre
-	
-
-Octobre -> Novembre
-	
-
-Decembre
-
- 
 
     Chaque arbre passe par différentes phases :
         La floraison : aucun fruit n’est disponible, il y a 5% de chances de perdre la récolte;
